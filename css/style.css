@@ -55,6 +55,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+
 nav h1{
     margin-left: 20px;
     color: #fff;
@@ -114,7 +115,7 @@ main .movimiento-imagen{
     letter-spacing: 1px;
 }
 .style-sobremi p{
-    font-size: 14px;
+    font-size: 19px;
     line-height: 25px;
     color: #565656;
 }
@@ -137,6 +138,8 @@ main .movimiento-imagen{
     grid-template-columns: repeat(6, 1fr);
     gap: 1em;
     margin: 10px 10px;
+    justify-self: center;
+
 }
 .containerCards div{
     padding: 20px;
@@ -145,7 +148,29 @@ main .movimiento-imagen{
     border: 2px solid #fff;
     border-radius: 3px;
     text-align: center;
+    
 }
 .containerCards div:hover{
     border: 1px solid #f1c40f
+}
+
+.containerCards div a{
+    text-decoration: none;
+    color: #141415;
+}
+
+.titulo-habilidades p{
+    font-size: 25px;
+    line-height: 25px;
+    color: #565656;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+    text-align: center;
+}
+footer{
+    margin: 0;
+    padding: 100px;
 }
