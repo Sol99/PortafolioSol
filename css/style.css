@@ -2,12 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    background: linear-gradient(90deg, rgb(211, 221, 225) 0%, rgb(227, 239, 239) 35%, rgb(192, 211, 227) 100%);
+
 }
 
 .bienvenida{
     max-width: 700px;
     margin: 25px auto;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     color: #2D425E;
 }
@@ -17,7 +19,13 @@ body{
     border: 2px solid #fff;
     padding: 20px 25px;
     font-weight: bold;
-    color: #2D425E;
+    box-shadow: -1px 3px 3px 0px rgba(46,74,117,1);
+}
+
+.bienvenida button:hover{
+    background-color:#FE3D74;
+    color: #fff;
+
 }
 
 .informacion{
@@ -25,10 +33,14 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #5D3A5D;
+    box-shadow: 3px 4px 6px #666;
+
 }
 
 nav ul{
@@ -41,7 +53,99 @@ li{
 nav ul li a{
     padding: 10px;
     text-decoration: none;
+    color: #fff;
 }
 nav h1{
     margin-left: 20px;
+    color: #fff;
+
+}
+main .movimiento-imagen{
+    animation: movimiento 2.5s linear infinite;
+}
+@keyframes movimiento {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.style-sobremi{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    color: #111135;
+    margin-bottom: 100px;
+}
+.style-sobremi img{
+    max-width: 400px;
+    margin-right: 80px;
+    background-color: #5D3A5D;
+    border-radius: 75px;
+}
+.titulo{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+.style-sobremi h2{
+    font-size: 34px;
+    margin: 20px 0;
+    color: #2D425E;
+    letter-spacing: 2px;
+}
+.style-sobremi h2 spam{
+    color:#5D3A5D ;
+}
+.style-sobremi h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.style-sobremi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+}
+.style-sobremi button{
+    color: #141415;
+    border-radius: 30px;
+    box-shadow: -1px 3px 3px 0px rgba(46,74,117,1);
+    border: 2px solid #fff;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.style-sobremi button:hover{
+    background-color: #FE3D74;
+    color: #fff;
+}
+
+.containerCards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+    margin: 10px 10px;
+}
+.containerCards div{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 9px 0px rgb(46 74 117);
+    border: 2px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+.containerCards div:hover{
+    border: 1px solid #f1c40f
 }
