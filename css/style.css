@@ -78,15 +78,20 @@ main .movimiento-imagen{
 
 .style-sobremi{
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 1300px;
     margin: auto;
     color: #111135;
     margin-bottom: 100px;
 }
+.imagen-info{
+    display: flex;
+    align-items: center;
+
+}
 .style-sobremi img{
     max-width: 400px;
-    margin-right: 80px;
     background-color: #5D3A5D;
     border-radius: 75px;
 }
@@ -208,21 +213,79 @@ main .movimiento-imagen{
     border: 1px solid #f1c40f
 
 }
-.proyectos-cards .proyecto .info{
-    background-color: #141415;
-    color: #FE3D74;
-    width: 100%;
-    opacity: 0;
-    bottom: -40px;
-    transition: .5s;
-}
-.proyectos-cards .proyecto:hover .info{
-    opacity: 1;
-    bottom: 0px;
-}
-
 
 footer{
     margin: 0;
     padding: 100px;
+}
+
+
+@media (max-width:576px) {              
+    nav{
+        flex-direction: column;
+    }
+  
+    .bienvenida{
+        font-size: 20px;
+    }
+    .informacion{
+        flex-direction: column;
+
+    }
+    .imagen-info{
+        flex-direction: column;
+    }
+    .informacion img{
+        width: 250px;
+        margin: 0%;
+    }
+    .style-sobremi img{
+        margin: 0%;
+        width: 250px;
+    }
+    .informacion-sobremi{
+        margin: 10px;
+        text-align: center;
+    }
+    .containerCards{
+        margin: 0%;
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        gap: 1.5em;
+    }
+    .containerCards div a h3{
+        font-size: 17px;
+    }
+    .proyectos-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .proyecto a img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+@media (min-width:768px) {              
+    .nav{
+         width: 100vh;
+    }
+    .bienvenida{
+        margin: 0%;
+        margin-top: 50px;
+        }
+    .informacion-sobremi{
+        margin: 0;
+        text-align: center;
+    }
+    .informacion img{
+        width: 400px;
+    }
+    .style-sobremi .imagen-info{
+        display: flex;
+        flex-direction: column;     
+    }
+    main .movimiento-imagen{
+        animation: movimiento 0s linear infinite;
+    }
 }

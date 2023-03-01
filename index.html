@@ -13,13 +13,16 @@
     <header class="contenido-header" style="background-color: rgb(219, 219, 235);">
         <nav>
             <img src="./img/sollogo1.png" alt="" width=190">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+            <div>
+                <ul class="lista">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul> 
+            </div>
+
         </nav>
     </header>
     <main class="informacion">
@@ -36,24 +39,31 @@
     </main>
     <!--Seccion sobre mi-->
     <section class="style-sobremi">
-        <img src="./img/sol.png" alt="" width="700">
-        <div>
-            <p class="titulo"> Sobre Mi</p>
-            <h2>Hola, soy <spam>Solange Caceres</spam>
-            </h2>
-            <h3>Estudiante de ingeniería en sistemas de información</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet, voluptas delectus consequuntur
-                sapiente ab est ducimus, sunt blanditiis repudiandae minima facere impedit commodi mollitia ex in
-                assumenda. Sequi, vel?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam corrupti necessitatibus
-                voluptatibus ea ullam dolores expedita harum ratione! Explicabo perferendis molestias placeat facilis
-                aliquid nesciunt, laboriosam dignissimos nam nobis?
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cumque veniam! Voluptas repudiandae
-                    minus esse fuga sint deserunt enim! Illo quis dolorum, harum repellendus placeat obcaecati commodi
-                    non consectetur fugiat.</p>
-            </p>
-            <button>Descargar CV</button>
+        <p class="titulo"> Sobre Mi</p>
+        <div class="imagen-info">
+            <img src="./img/sol.png" alt="" width="700">
+            <div class="informacion-sobremi">
+                <h2>Hola, soy <spam>Solange Caceres</spam>
+                </h2>
+                <h3>Estudiante de ingeniería en sistemas de información</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet, voluptas delectus
+                    consequuntur
+                    sapiente ab est ducimus, sunt blanditiis repudiandae minima facere impedit commodi mollitia ex in
+                    assumenda. Sequi, vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam corrupti necessitatibus
+                    voluptatibus ea ullam dolores expedita harum ratione! Explicabo perferendis molestias placeat
+                    facilis
+                    aliquid nesciunt, laboriosam dignissimos nam nobis?
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cumque veniam! Voluptas
+                        repudiandae
+                        minus esse fuga sint deserunt enim! Illo quis dolorum, harum repellendus placeat obcaecati
+                        commodi
+                        non consectetur fugiat.</p>
+                </p>
+                <button>Descargar CV</button>
+            </div>
         </div>
+
     </section>
     <!--Seccion servicios-->
     <div class="titulo-habilidades">
@@ -80,7 +90,7 @@
         </div>
         <div>
             <a href="https://es.wikipedia.org/wiki/HTML5">
-                <img src="./img/bootstrap.png" alt="" width="70">
+                <img src="./img/bootstrap.png" alt="" width="55">
                 <h3>Bootstrap</h3>
             </a>
         </div>
@@ -153,53 +163,55 @@
 
     </div>
     <!--Seccion Portafolio-->
-        <p class="titulo-seccion">Mis Proyectos</p>
-        <div class="proyectos-cards">
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
-                <div class="info">
-                    <h4>Descripcion de proyecto</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, hic? Ad, officia! Voluptate molestiae maxime quis nam placeat ab ratione, aliquid, qui tempore pariatur ea similique fugit recusandae blanditiis numquam.</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
+    <p class="titulo-seccion">Mis Proyectos</p>
+    <div class="proyectos-cards">
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <div class="info">
                 <h4>Descripcion de proyecto</h4>
-                <p>Diseño web</p>
-            </div>
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
-                <h4>Descripcion de proyecto</h4>
-                <p>Diseño web</p>
-            </div>
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
-                <h4>Descripcion de proyecto</h4>
-                <p>Diseño web</p>
-            </div>
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
-                <h4>Descripcion de proyecto</h4>
-                <p>Diseño web</p>
-            </div>
-            <div class="proyecto">
-                <a href="https://netgame-juegos.netlify.app/">
-                    <img src="./img/netgame.png" alt="" height="300">
-                </a>
-                <h4>Descripcion de proyecto</h4>
-                <p>Diseño web</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, hic? Ad, officia! Voluptate molestiae
+                    maxime quis nam placeat ab ratione, aliquid, qui tempore pariatur ea similique fugit recusandae
+                    blanditiis numquam.</p>
             </div>
         </div>
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <h4>Descripcion de proyecto</h4>
+            <p>Diseño web</p>
+        </div>
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <h4>Descripcion de proyecto</h4>
+            <p>Diseño web</p>
+        </div>
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <h4>Descripcion de proyecto</h4>
+            <p>Diseño web</p>
+        </div>
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <h4>Descripcion de proyecto</h4>
+            <p>Diseño web</p>
+        </div>
+        <div class="proyecto">
+            <a href="https://netgame-juegos.netlify.app/">
+                <img src="./img/netgame.png" alt="" height="300">
+            </a>
+            <h4>Descripcion de proyecto</h4>
+            <p>Diseño web</p>
+        </div>
+    </div>
     <footer style="background-color: #5D3A5D ;">
         <ul>
             <li><span>Contacto</span></li>
