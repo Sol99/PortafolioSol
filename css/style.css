@@ -34,6 +34,7 @@ body{
     justify-content: center;
 }
 
+
 nav {
     display: flex;
     align-items: center;
@@ -279,11 +280,10 @@ footer{
         text-align: center;
     }
     .informacion img{
-        width: 400px;
+        width: 500px;
     }
-    .style-sobremi .imagen-info{
-        display: flex;
-        flex-direction: column;     
+    .style-sobremi img{
+    max-width: 290px;
     }
     main .movimiento-imagen{
         animation: movimiento 0s linear infinite;
@@ -301,4 +301,43 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+@media (min-width:992px) {  
+    .informacion{
+        margin: 20px 0 90px;
+    }  
+    .style-sobremi img{
+        max-width: 400px;
+    }
+    .containerCards{
+        display: grid;
+        grid-template-columns: repeat(3, 273px);
+        grid-template-rows: 141px 141px 141px 141px;
+    }
+     
+}
+@media (min-width:1200px) {  
+    .proyectos-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 589px);
+    }
+    .proyectos-cards .proyecto a img{
+        width: 554px;
+    }
+    main .movimiento-imagen{
+        animation: movimiento 2.5s linear infinite;
+    }
+    .style-sobremi img{
+        margin-right: 70px;
+    }           
+}
+@media (min-width:1400px) {
+    .proyectos-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 488px);
+    }
+    .proyectos-cards .proyecto a img{
+        width: 484px;
+    }
+}
 }
