@@ -288,4 +288,17 @@ footer{
     main .movimiento-imagen{
         animation: movimiento 0s linear infinite;
     }
+    .containerCards{
+        margin: 0%;
+        display: grid;
+        grid-template-columns: repeat(5,100px);
+        gap: 1.5em;
+    }
+    .containerCards div a h3{
+        font-size: 17px;
+    }
+    .proyectos-cards{
+        display: flex;
+        flex-direction: column;
+    }
 }
