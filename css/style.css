@@ -2,13 +2,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(90deg, rgb(211, 221, 225) 0%, rgb(227, 239, 239) 35%, rgb(192, 211, 227) 100%);
+    background: linear-gradient(90deg, rgb(222, 229, 231) 0%, rgb(230, 237, 237) 35%, rgb(211, 222, 231) 100%);
 
 }
 
 .bienvenida{
     max-width: 700px;
-    margin: 25px auto;
     font-size: 25px;
     text-align: center;
     color: #2D425E;
@@ -23,7 +22,7 @@ body{
 }
 
 .bienvenida button:hover{
-    background-color:#FE3D74;
+    background-color:#6567C3;
     color: #fff;
 
 }
@@ -32,6 +31,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #eff4f7;
+    padding-bottom: 65px;
+    padding-top: 30px;
 }
 
 header{
@@ -72,14 +74,16 @@ main .movimiento-imagen{
     }
 }
 
+/*Estilos seccion sobre mi*/
 .style-sobremi{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1300px;
     margin: auto;
     color: #111135;
     margin-bottom: 100px;
+    background-color: #eff4f7;
+    padding: 130px;
 }
 .imagen-info{
     display: flex;
@@ -141,10 +145,13 @@ main .movimiento-imagen{
     margin: 10px;
     justify-self: center;
     justify-content: center;
+    margin-bottom:95px;
+    background-color: #eff4f7;
+    padding: 96px;
 
 }
 .containerCards div{
-    background-color: #fff;
+    background-color: f6f6f6;
     box-shadow: 0px 2px 9px 0px rgb(46 74 117);
     border: 2px solid #fff;
     border-radius: 3px;
@@ -169,6 +176,7 @@ main .movimiento-imagen{
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     text-align: center;
+    margin: 70px;
 }
 
 .titulo-seccion{
@@ -181,6 +189,7 @@ main .movimiento-imagen{
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     text-align: center;
+    margin: 70px;
 }
 
 .proyectos-cards{
@@ -188,7 +197,8 @@ main .movimiento-imagen{
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 10px;
-    margin: 20px;
+    background-color: #eff4f7;
+    padding: 100px;
 
 }
 .proyectos-cards .proyecto{
@@ -216,15 +226,52 @@ main .movimiento-imagen{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    justify-items:end;
+}
+form{
+    margin-top: 80px;
 }
 form .campo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 15px;
-    margin-bottom: 11px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #919191;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
 
+.info-form h3{
+    font-size: 25px;
+    line-height: 25px;
+    color: #565656;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+.info-form p{
+    line-height: 20px;
+    color: #111135;
+}
+.lista-formulario li a{
+    text-decoration: none;
+}
+.lista-formulario{
+    list-style-type: none;
+}
+
+form .boton-formulario{
+    margin: 0px 150px 0px 150px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    box-shadow: -1px 3px 3px 0px rgba(46,74,117,1);
+}
+
+form .boton-formulario:hover{
+    background-color: #FE3D74;
 }
 footer{
     margin: 0;
@@ -267,7 +314,6 @@ footer{
         visibility: visible;
     }
     
-    
     .lista{
         flex-direction: column;
         align-items: end;
@@ -283,7 +329,7 @@ footer{
     .imagen-info{
         flex-direction: column;
     }
-    .informacion img{
+    .informacion .imagen-pc{
         width: 250px;
         margin: 0%;
     }
@@ -307,30 +353,48 @@ footer{
     .proyectos-cards{
         display: flex;
         flex-direction: column;
+        padding: 30px;
     }
     .proyecto a img{
         object-fit: cover;
         width: 100%;
     }
+    .seccion-formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-form h3,
+    .info-form p{
+        text-align: center;
+    }
+    form .campo{
+        display: flex;
+        width: 100%;
+    }
+
+
 
 }
 @media (min-width:768px) {              
-    .nav{
-         width: 76vh;
-    }
+
     .bienvenida{
-        margin: 0%;
         margin-top: 50px;
+        margin-left: 40px;
         }
     .informacion-sobremi{
-        margin: 0;
+        margin-left: 20px;
         text-align: center;
     }
-    .informacion img{
+
+    .informacion .imagen-pc{
         width: 500px;
     }
     .style-sobremi img{
-    max-width: 290px;
+     max-width: 290px;
+    }
+    .style-sobremi{
+        padding: 3%;
     }
     main .movimiento-imagen{
         animation: movimiento 0s linear infinite;
@@ -347,9 +411,19 @@ footer{
     .proyectos-cards{
         display: flex;
         flex-direction: column;
+        gap: 1.5em;
+        padding: 40px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
     }
 
 @media (min-width:992px) {  
+    .bienvenida{
+        margin-left: 0px;
+    }
     .informacion{
         margin: 20px 0 90px;
     }  
@@ -364,6 +438,9 @@ footer{
      
 }
 @media (min-width:1200px) {  
+    .bienvenida{
+        margin-left: 0px;
+    }
     .proyectos-cards{
         display: grid;
         grid-template-columns: repeat(2, 589px);
@@ -381,9 +458,10 @@ footer{
 @media (min-width:1400px) {
     .proyectos-cards{
         display: grid;
-        grid-template-columns: repeat(2, 488px);
+        grid-template-columns: repeat(3, 488px);
+        grid-template-rows: 480px 480px;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     .proyectos-cards .proyecto a img{
         width: 484px;
